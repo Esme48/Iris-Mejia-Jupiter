@@ -1,0 +1,37 @@
+body{
+    background-color: rgb(104, 181, 219);
+    text-align: left;
+    color:rgb(0, 0, 0);
+
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: bolder;
+  font-style: normal;
+}
+h1{
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+  text-align: center;
+  color:aliceblue;
+  margin-top: 20px;
+}
+h2{
+  font-size: 1.5rem;
+  color:black;
+  margin-bottom: 10px;
+}
+ul li{
+  list-style-type:square;
+}
+section{
+    padding: 20px;
+    margin: 20px;
+    color:antiquewhite;
+}
+img{
+  border-radius: 8px;
+  width: 300px;
+  height: auto;
+}
