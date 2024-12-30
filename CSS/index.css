@@ -1,37 +1,160 @@
-body{
-    background-color: rgb(104, 181, 219);
-    text-align: left;
-    color:rgb(0, 0, 0);
-
+/*The Big title name at the center styleing*/
+#name-comp{
   font-family: "Lora", serif;
-  font-optical-sizing: auto;
-  font-weight: bolder;
-  font-style: normal;
+  font-size: 5rem;
+  padding-top: 0.5;
+  text-align: center;
+  font-style: italic;  
 }
+/*The Background for the entire page & the portfolio name*/
+body{
+    background-color: rgb(220, 20, 60);
+    text-align: left;
+    color:rgb(255, 255, 255);
+
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: bolder;
+    font-style: normal;
+}
+/*The Big Title Name At the Center formatting*/
 h1{
   font-family: "Lora", serif;
   font-optical-sizing: auto;
   font-weight: bold;
   font-style: normal;
   text-align: center;
-  color:aliceblue;
+  color:rgb(255,255,255);
   margin-top: 20px;
 }
+/*About, Experince, Connect Sections*/
 h2{
   font-size: 1.5rem;
-  color:black;
+  font-weight: bolder;
+  color:rgb(255,255,255);
   margin-bottom: 10px;
+ /*For nav section= border-style: inset; =*/
 }
-ul li{
+ul li a{
   list-style-type:square;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+
 }
 section{
     padding: 20px;
     margin: 20px;
-    color:antiquewhite;
+    color:rgb(255,255,255); 
+    font-weight: normal;
 }
-img{
-  border-radius: 8px;
-  width: 300px;
+#Sample1-Pic{
+  border-radius:20px;
+  margin: 1em;
+  width: 200px;
   height: auto;
+  border-color:aliceblue;
+  border-width:3dvi;
+  border-style:groove;
+}
+#Sampled2-Pic{
+  border-radius:20px;
+  margin: 1em;
+  width: 200px;
+  height: auto;
+  border-color:aliceblue;
+  border-width:3dvi;
+  border-style:groove;
+}
+#Sample3-Pic{
+  border-radius:20px;
+  margin: 1em;
+  width: 200px;
+  height: auto;
+  border-color:aliceblue;
+  border-width:3dvi;
+  border-style:groove;
+}
+#navigation{
+  position: sticky;
+  display: flex;
+  justify-content: space-evenly;
+  top: 0;
+  opacity: 100%;
+  width: 100%;
+  border-style: inset;
+  background-color: rgb(220, 20, 60);
+}
+#navigation ul{
+  display: flex;
+  flex-direction: row;
+  gap: 4em;
+  list-style-type: circle;
+  padding-bottom:0;
+  color: rgb(255,255,255);
+ 
+}
+/*Flex Part begins for experince section*/
+#experience {
+  margin: 2rem 0;
+  font-family: Arial, sans-serif;
+}
+
+#experience h2 {
+  text-align: left;
+  margin-bottom: 1.5rem;
+  color:rgb(255,255,255);
+}
+
+.Cont {
+  display: flex;
+  flex-direction: column; /* vertically */
+  gap: 1.5rem; 
+}
+
+.Item {
+  display: flex;
+  flex-direction: row; /* side by side */
+  gap: 1rem;
+  align-items: flex-start;
+  background-color: #f9f9f9;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.time {
+  flex: 1; 
+  font-weight: bold;
+  color: rgb(220, 20, 60);
+  font-style: italic;
+}
+
+.Experince-1 {
+  flex: 3;
+  color: rgb(0,0,0);
+}
+
+/*Image Parts*/
+.Img-content {
+  justify-content: space-evenly;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  
+}
+/*Connect*/
+ul{
+  display: flex;
+  justify-content: space-evenly;
+}
+li{
+  flex:1;
+}
+
+a:hover{
+color:black;
+}
+
+a i{
+  font-size: 20px;
 }
