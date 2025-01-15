@@ -97,7 +97,7 @@ section{
 }
 /*Flex Part begins for experince section*/
 #experience {
-  margin: 2rem 0;
+  margin: 2rem;
   font-family: Arial, sans-serif;
 }
 
@@ -106,7 +106,21 @@ section{
   margin-bottom: 1.5rem;
   color:rgb(255,255,255);
 }
-
+#skills h2{
+  display: flex;
+  flex-direction: row;
+  gap: 4em;
+}
+#skills ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+#skills ul li{
+  margin: 2rem;
+}
 .cont {
   display: flex;
   flex-direction: column; /* vertically */
