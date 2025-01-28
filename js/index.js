@@ -25,4 +25,65 @@ for(let i=0; i<skills.length; i++){
   skillsList.appendChild(skill)
 }
 
+//The Message Form Stuffffff//
+
+function onFormSubmit(event){
+  event.preventDefault();
+ //Setting up the data
+  const usersName= event.target.usersName;
+  const usersEmail= event.target.usersEmail;
+  const usersMessage= event.target.usersMessage;
+  console.log(usersName);
+  console.log(usersEmail);
+  console.log(usersMessage);
+
+  const messageSection=document.getElementById("messages");
+  const messageList=messageSection.getElementsByTagName("ul");
+  console.log(messageList);
+
+  messageSection.hidden=false;
+
+  //Displaying the message
+
+  const newMessage=document.createElement("li");
+  newString= `<a href="mailto:${usersEmail}">${usersName}</a>\n
+  <span>${usersMessage}</span>`;
+  //console.log(newString);
+  newMessage.innerHTML.newString;
+
+  //The Remove Button
+  const removeButton=document.createElement("button");
+  removeButton.innerText="Remove";
+  removeButton.type="button";
+  removeButton.addEventListener("click", function (){
+  const entry=this.parentNode;
+  entry.remove();
+  });
+
+  //Add a remove button
+  newMessage.appendChild(removeButton);
+
+  //Add a message
+  messageList.appendChild(newMessage);
+
+  event.target.reset();
+
+}
+
+const messageForms=document.getElementsByName("leave_message");
+//console.log(messageForms);
+const messageForm=messageForms[0];
+
+//Message Section Hidden Component
+const messageSection= document.getElementById("messages");
+messageSection.hidden = true;
+//console.log(messageForm);
+
+//When submit is pressed, call the onFormSubmit and execute that function
+messageForm.addEventListener("submit", onFormSubmit);
+
+
+
+
+
 

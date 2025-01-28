@@ -17,6 +17,7 @@
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#connect">Connect</a></li>
+            <li><a href="#messageForm">Leave a Message</a></li>
         </ul>
     </nav>
 
@@ -90,6 +91,44 @@
             <li><a href="https://www.linkedin.com/in/iris-mejia48/"> 🎉 LinkedIn</a></li>
         </ul>
     </section>
+    <section>
+        <h2>Leave a Message :) </h2>
+        <form id="messageForm" name="leave_message" autocomplete="on">
+            <label for="usernameField">Users Name: </label>
+            <input
+                type="text"
+                name="usersName"
+                id="usernameField"
+                required="true"
+            /><br />
+            <label for="emailField">Email: </label>
+            <input
+                type="email"
+                name="usersEmail"
+                id="emailField"
+                required="true"
+                autocomplete="on"
+            /><br />
+            <label for="usersmessageField">Users Message: </label>
+            <textarea
+                type="text"
+                name="usersMessage"
+                id="usermessageField"
+                required="true"
+            ></textarea><br />
+            <button type="submit" class="button" name="submitButton">
+                Submit
+            </button>
+        </form>
+    </section>
+
+    <section id="messages">
+        <h2>Messages</h2>
+        <div class="messageSpace">
+            <ul></ul>
+        </div>    
+    </section>
+
     <script src="js/index.js"></script>
 </body>
 </html>
