@@ -191,6 +191,23 @@ The part where we adjust the message part.
   background-color:rgb(0, 0, 0);
   color:white;
 }
+/*Project Section*/
+#projects ul{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0;
+  list-style:circle;
+}
+
+#projects ul li{
+ background-color:#f9f9f9;
+ padding: 1rem;
+ border: 1px;
+ border-color: #f9f9f9;
+ border-radius: 5rem;
+ color:black;
+}
 
 
 /* The start section for smaller devices */

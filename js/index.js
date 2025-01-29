@@ -82,6 +82,33 @@ messageSection.hidden = true;
 //When submit is pressed, call the onFormSubmit and execute that function
 messageForm.addEventListener("submit", onFormSubmit);
 
+//Fetch Component, a promise that has our data//
+const projectSection = document.getElementById("projects");
+console.log("projectSection:", projectSection);
+const projectList = projectSection.querySelector("ul");
+console.log("projectList", projectList);
+
+
+fetch("https://api.github.com/users/Esme48/repos")
+.then((response)=>{
+  //Body of the callback function
+  return response.json(); 
+})
+.then((repositories)=>{
+console.log("repositories:", repositories);
+for (let i=0; i < repositories.length; i++){
+  const project = repositories[i].name;
+  const li = document.createElement("li");
+  //innertext of the li element
+  li.innerText = project;
+  projectList.appendChild(li);
+}
+ })
+
+ .catch((error)=>{
+console.log(error);
+ });
+
 
 
 
