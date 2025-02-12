@@ -178,6 +178,7 @@ a i{
 /*
 The part where we adjust the message part.
 */
+
 #messageForm{
   display: flex;
   flex-direction: column;
@@ -331,3 +332,4 @@ section{
         font-style: normal;
       }
 } 
+
